@@ -80,12 +80,12 @@ function Home() {
                             isDark ? "text-white" : "text-gray-700"
                         }`}
                     >
-                        <h3 className="">Hello I'm</h3>
+                        <h3 className="">Hello👋 It's me</h3>
                         <h1 className="text-3xl sm:text-4xl lg:text-5xl">
                             Ayomide Otegbade
                         </h1>
                         <h3 className={isDark? "text-blue-300" : "text-purple-600"}>
-                            I am {typedText}
+                            And I'm a {typedText}
                             <motion.span
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
