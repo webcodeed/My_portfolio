@@ -41,7 +41,7 @@ function About() {
     ]
     return (
         <section
-            className={`pb-10 w-full transform transition-all duration-300 delay-125 ${
+            className={`pb-20 w-full transform transition-all duration-300 delay-125 ${
                 isDark ? "bg-gray-900 text-gray-200" : "bg-white  text-gray-700"
             }`}
         >
