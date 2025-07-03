@@ -90,7 +90,7 @@ function NavBar() {
                     </li>
                 ))}
                 <motion.li
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className="md:p-0 p-2 w-max
                         "
@@ -99,15 +99,15 @@ function NavBar() {
                         href="http://google.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={` px-3 py-1.5 border-2 text-md font-semibold rounded-xl
+                        className={` px-5 py-2 text-md font-semibold rounded-lg
                                     ${
                                         isDark
-                                            ? "text-gray-200 bg-purple-600"
-                                            : "bg-gray-200 text-purple-600"
+                                            ? "text-gray-700 bg-blue-400"
+                                            : "bg-purple-600 text-gray-200"
                                     }
                                 `}
                     >
-                        Appointment
+                        Resume
                     </a>
                 </motion.li>
             </ul>
