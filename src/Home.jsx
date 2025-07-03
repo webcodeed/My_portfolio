@@ -60,7 +60,7 @@ function Home() {
     return (
         <header
             className={`transform transition-colors duration-400 grid content-center h-screen w-auto ${
-                isDark ? "bg-gray-700" : "bg-white"
+                isDark ? "bg-gray-900" : "bg-white"
             }`}
         >
             <div
