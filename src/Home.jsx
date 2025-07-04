@@ -18,6 +18,14 @@ function Home() {
 
     const words = ["Web Developer", "Frontend Developer", "Creative Coder"]
 
+    const socials = [
+        { link: "/", icon: <FaLinkedin className=" active:scale-75" /> },
+        { link: "/", icon: <FaGithub className=" active:scale-75" /> },
+        { link: "/", icon: <FaTwitter className=" active:scale-75" /> },
+        { link: "/", icon: <FaFacebook className=" active:scale-75" /> },
+        { link: "/", icon: <FaInstagram className=" active:scale-75" /> },
+    ]
+
     useEffect(() => {
         const currentWord = words[currentWordIndex]
 
@@ -84,7 +92,11 @@ function Home() {
                         <h1 className="text-3xl sm:text-4xl lg:text-5xl">
                             Ayomide Otegbade
                         </h1>
-                        <h3 className={isDark? "text-blue-300" : "text-purple-600"}>
+                        <h3
+                            className={
+                                isDark ? "text-blue-300" : "text-purple-600"
+                            }
+                        >
                             And I'm a {typedText}
                             <motion.span
                                 initial={{ opacity: 0 }}
@@ -109,25 +121,24 @@ function Home() {
                     </main>
                     <footer className="space-y-3 md:space-y-10">
                         <div
-                            className={` flex space-x-3 text-2xl md:text-3xl lg:text-4xl ${
-                                isDark ? "text-blue-300" : " text-purple-600"
+                            className={` flex space-x-3 text-lg md:text-xl lg:text-2xl ${
+                                isDark ? "text-gray-900" : " text-gray-200"
                             }  `}
                         >
-                            <a href="">
-                                <FaGithub className=" active:scale-75" />
-                            </a>
-                            <a href="">
-                                <FaLinkedin />
-                            </a>
-                            <a href="">
-                                <FaTwitter />
-                            </a>
-                            <a href="">
-                                <FaFacebook />
-                            </a>
-                            <a href="">
-                                <FaInstagram />
-                            </a>
+                            {" "}
+                            {socials.map((item, index) => (
+                                <a
+                                    key={index}
+                                    className={`p-2 rounded-full ${
+                                        isDark
+                                            ? "bg-blue-400"
+                                            : " bg-purple-600"
+                                    } `}
+                                    href={item.link}
+                                >
+                                    {item.icon}
+                                </a>
+                            ))}
                         </div>
                         <ul
                             className={`flex mt-7 space-x-3 ${
