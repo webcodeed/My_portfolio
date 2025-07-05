@@ -1,6 +1,7 @@
 import About from "./About"
 import Home from "./Home"
 import NavBar from "./NavBar"
+import Skills from "./Skills"
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
         <NavBar/>
         <Home/>
         <About/>
+        <Skills/>
         </>
     )
 }

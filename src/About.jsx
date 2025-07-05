@@ -46,8 +46,8 @@ function About() {
             }`}
         >
             <div className=" w-full h-0.5 bg-gradient-to-r from-purple-600 to-blue-300"></div>
-            <motion.header
-                className={` text-center space-y-3 transition-colors duration-300 delay-125 py-7   ${
+            <header
+                className={` text-center space-y-3 p-3 transition-colors duration-300 delay-125 py-7   ${
                     isDark
                         ? " bg-gradient-to-br from-gray-800 via via-gray-700 to-gray-900"
                         : "bg-gradient-to-br from-white via-gray-200 to-gray-300"
@@ -61,13 +61,13 @@ function About() {
                     About Me
                 </h1>
                 <p>Discover my journey, passion and the story behind my work</p>
-            </motion.header>
+            </header>
             <main
                 className={` space-y-5 md:grid md:grid-cols-2 gap-12 mb-10 min-h-screen grid content-center text-sm p-5 mt-10 w-auto md:max-w-9/10 md:mx-auto 
                  `}
             >
                 <motion.div
-                    initial={{ opacity: 0, y: "50px" }}
+                    initial={{ opacity: 0, y: "-50px" }}
                     whileInView={{ opacity: 1, y: "0px" }}
                     transition={{ duration: 1 }}
                     className={`space-y-2 
@@ -110,7 +110,7 @@ function About() {
                     </p>
                 </motion.div>
                 <motion.div
-                    initial={{ opacity: 0, y: "50px" }}
+                    initial={{ opacity: 0, y: "-50px" }}
                     whileInView={{ opacity: 1, y: "0px" }}
                     transition={{ duration: 1 }}
                     className={`space-y-2 
@@ -147,7 +147,7 @@ function About() {
                         twice when navigating a site.
                     </p>
                     <p className=" mt-4 sm:text-base leading-relaxed">
-                        So i don’t just throw components together. I think in
+                        So, i don’t just throw components together. I think in
                         systems and patterns. Every line of code I write solves
                         a problem for a user, not just for a screen.
                     </p>
@@ -156,7 +156,7 @@ function About() {
                     onClick={() => setApproach(!approach)} >{approach? "Show less": "Show more"}</p>
                 </motion.div>
                 <motion.div
-                    initial={{ opacity: 0, y: "50px" }}
+                    initial={{ opacity: 0, y: "-50px" }}
                     whileInView={{ opacity: 1, y: "0px" }}
                     transition={{ duration: 1 }}
                     className={` md:col-span-2 space-y-2 

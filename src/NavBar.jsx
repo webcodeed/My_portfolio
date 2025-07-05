@@ -79,7 +79,7 @@ function NavBar() {
                         key={item}
                         className={` 
                                 md:relative md:after:content-[''] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:h-[3px] md:after:w-full md:after:origin-center md:after:transform md:after:transition-transform md:after:duration-300 md:after:scale-x-0 md:hover:after:scale-x-100
-                                md:text-lg md:p-0 w-max md:hover:bg-transparent font-semibold cursor-pointer p-2  transition-colors duration-200 ${
+                                md:text-lg md:p-0 w-auto md:hover:bg-transparent font-semibold cursor-pointer p-2  transition-colors duration-200 ${
                                     isDark
                                         ? "text-gray-200 md:after:bg-gray-200 hover:bg-gray-900"
                                         : "text-gray-700 hover:bg-gray-300 md:after:bg-gray-700 "

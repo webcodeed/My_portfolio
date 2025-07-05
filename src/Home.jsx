@@ -125,7 +125,6 @@ function Home() {
                                 isDark ? "text-gray-900" : " text-gray-200"
                             }  `}
                         >
-                            {" "}
                             {socials.map((item, index) => (
                                 <a
                                     key={index}
@@ -147,7 +146,7 @@ function Home() {
                         >
                             <li className=" active:scale-95 transition-all ease-in-out">
                                 <a
-                                    className=" lg:text-lg py-3 px-13 sm:px-20 md:px-12 lg:px-18 rounded-xl  bg-gradient-to-r from-purple-600 to-blue-400"
+                                    className=" lg:text-lg py-3 px-12 sm:px-20 md:px-12 lg:px-18 rounded-xl  bg-gradient-to-r from-purple-600 to-blue-400"
                                     href=""
                                 >
                                     Book me
@@ -155,7 +154,7 @@ function Home() {
                             </li>
                             <li className=" active:scale-95 transition-all ease-in-out">
                                 <a
-                                    className=" lg:text-lg py-3 px-13 sm:px-20 md:px-12 lg:px-18 rounded-xl  bg-gradient-to-r from-purple-600 to-blue-400"
+                                    className=" lg:text-lg py-3 px-12 sm:px-20 md:px-12 lg:px-18 rounded-xl  bg-gradient-to-r from-purple-600 to-blue-400"
                                     href=""
                                 >
                                     Resume
