@@ -1,8 +1,31 @@
 import { useState } from "react"
 import { useTheme } from "./ThemeContext"
 import { motion } from "motion/react"
-import { FaCss3, FaHtml5, FaReact } from "react-icons/fa"
+import {
+    FaBookOpen,
+    FaCode,
+    FaCss3,
+    FaDatabase,
+    FaHtml5,
+    FaJs,
+    FaLaptopCode,
+    FaLightbulb,
+    FaNodeJs,
+    FaPaintBrush,
+    FaPuzzlePiece,
+    FaReact,
+    FaUsers,
+} from "react-icons/fa"
 import { LightBulbIcon } from "@heroicons/react/24/outline"
+import {
+    SiGit,
+    SiGithub,
+    SiNextdotjs,
+    SiTailwindcss,
+    SiTypescript,
+} from "react-icons/si"
+import { BiMessageRoundedDetail, BiTransfer } from "react-icons/bi"
+import { AiOutlineEye } from "react-icons/ai"
 
 function Skills() {
     const { isDark } = useTheme()
@@ -14,96 +37,111 @@ function Skills() {
             name: "HTML",
             icon: <FaHtml5 />,
             level: "90",
-            color: "from-cyan-400 to-cyan-600",
+            color: "from-orange-500 to-red-600",
         },
         {
             name: "CSS",
             icon: <FaCss3 />,
             level: "92",
-            color: "from-orange-400 to-orange-600",
+            color: "from-blue-500 to-blue-700",
         },
         {
             name: "Tailwind CSS",
-            icon: <FaCss3 />,
+            icon: <SiTailwindcss />,
             level: "92",
-            color: "from-teal-400 to-teal-600",
+            color: "from-cyan-400 to-sky-500",
         },
         {
             name: "JavaScript",
-            icon: <FaHtml5 />,
+            icon: <FaJs />,
             level: "85",
-            color: "from-orange-400 to-orange-600",
+            color: "from-yellow-300 to-yellow-500",
         },
-        { name: "React", icon: <FaReact />, level: "80", color: "" },
+        {
+            name: "React",
+            icon: <FaReact />,
+            level: "80",
+            color: "from-cyan-300 to-cyan-500",
+        },
         {
             name: "Next.js",
-            icon: <FaReact />,
+            icon: <SiNextdotjs />,
             level: "20",
-            color: "from-gray-600 to-gray-800",
+            color: "from-neutral-800 to-zinc-900",
         },
         {
             name: "Typescript",
-            icon: <FaReact />,
+            icon: <SiTypescript />,
             level: "20",
-            color: "from-blue-400 to-blue-600",
+            color: "from-blue-500 to-blue-700",
         },
         {
             name: "REST APIs",
-            icon: <FaReact />,
+            icon: <BiTransfer />,
             level: "73",
-            color: "from-purple-400 to-purple-600",
+            color: "from-gray-400 to-gray-600",
         },
         {
             name: "Node.js",
-            icon: <FaReact />,
+            icon: <FaNodeJs />,
             level: "20",
-            color: "from-green-400 to-green-600",
+            color: "from-lime-500 to-emerald-600",
         },
         {
             name: "Appwrite",
-            icon: <FaReact />,
+            icon: <FaDatabase />,
             level: "70",
-            color: "from-pink-400 to-pink-700",
+            color: "from-pink-400 to-rose-500",
         },
         {
-            name: "Git & GitHub",
-            icon: <FaReact />,
+            name: "GiT",
+            icon: <SiGit />,
             level: "88",
-            color: "from-gray-500 to-gray-700",
+            color: "from-orange-500 to-orange-700",
+        },
+        {
+            name: "GitHub",
+            icon: <SiGithub />,
+            level: "85",
+            color: "from-gray-800 to-gray-900",
         },
         {
             name: "VS Code",
-            icon: <FaReact />,
+            icon: <FaCode />,
             level: "95",
-            color: "from-indigo-400 to-indigo-600",
+            color: "from-blue-500 to-indigo-600",
         },
         {
             name: "UI/UX Design",
-            icon: <FaReact />,
+            icon: <FaPaintBrush />,
             level: "50",
-            color: "from-rose-400 to-rose-600",
+            color: "from-pink-500 to-purple-600",
         },
     ]
 
     const softSkils = [
-        { name: "Problem Solving", icon: <LightBulbIcon />, level: "85" },
-        { name: "Creative Thinking", icon: <LightBulbIcon />, level: "81" },
-        { name: "Attention to Detail", icon: <LightBulbIcon />, level: "80" },
-        { name: "Communication Skills", icon: <LightBulbIcon />, level: "90" },
-        { name: "Team Collaboration", icon: <LightBulbIcon />, level: "90" },
+        { name: "Problem Solving", icon: <FaPuzzlePiece />, level: "85" },
+        { name: "Creative Thinking", icon: <FaLightbulb />, level: "81" },
+        { name: "Attention to Detail", icon: <AiOutlineEye />, level: "80" },
+        {
+            name: "Communication Skills",
+            icon: <BiMessageRoundedDetail />,
+            level: "90",
+        },
+        { name: "Team Collaboration", icon: <FaUsers />, level: "90" },
         {
             name: "Adaptability & Continuous Learning",
-            icon: <LightBulbIcon />,
+            icon: <FaBookOpen />,
             level: "88",
         },
-        { name: "Technical Proficiency", icon: <LightBulbIcon />, level: "88" },
+        { name: "Technical Proficiency", icon: <FaLaptopCode />, level: "88" },
     ]
 
     const Tech = ({ item, index }) => {
         {
             return (
                 <div
-                    className={` rounded-xl shadow-2xl p-2 mb-2 border hover:shadow-xl border-gray-100 ${
+                    className={` rounded-xl shadow-2xl p-3 mb-2 border hover:shadow-xl border-gray-100 ${
                         isDark
                             ? " backdrop-blur-md bg-gray-800 border-gray-600"
                             : " border-gray-300"
@@ -111,8 +149,15 @@ function Skills() {
                 >
                     <div className="flex justify-between items-end h-10  mb-1">
                         <div className="flex items-center  gap-1 mb-1">
-                            <span className={` rounded-lg  `}>{item.icon}</span>
-                            <h4 className={`font-semibold `}>{item.name}</h4>
+                            <span
+                                className={` rounded-lg p-2
+                                 bg-gradient-to-br ${item.color} text-white `}
+                            >
+                                {item.icon}
+                            </span>
+                            <h4 className={`font-semibold text-sm md:text-md `}>
+                                {item.name}
+                            </h4>
                         </div>
                         <span className=" text-sm">{item.level}%</span>
                     </div>
@@ -133,7 +178,7 @@ function Skills() {
         {
             return (
                 <div
-                    className={` rounded-xl shadow-2xl p-2 mb-2 border hover:shadow-xl border-gray-100 ${
+                    className={` rounded-xl shadow-2xl p-4 mb-2 border hover:shadow-xl border-gray-100 ${
                         isDark
                             ? " backdrop-blur-md bg-gray-800 border-gray-600"
                             : " border-gray-300"
@@ -141,8 +186,19 @@ function Skills() {
                 >
                     <div className="flex justify-between items-end h-10  mb-1">
                         <div className="flex items-center  gap-1 mb-1">
-                            <span className={` rounded-lg  `}>{item.icon}</span>
-                            <h4 className={`font-semibold `}>{item.name}</h4>
+                            <span
+                                className={` rounded-lg p-2
+                                ${
+                                    isDark
+                                        ? "bg-gradient-to-r from-blue-300 to-blue-400"
+                                        : "bg-gradient-to-r from-purple-400 to-purple-600"
+                                } text-white `}
+                            >
+                                {item.icon}
+                            </span>
+                            <h4 className={`font-semibold text-sm md:text-md `}>
+                                {item.name}
+                            </h4>
                         </div>
                         <span className=" text-sm">{item.level}%</span>
                     </div>
@@ -150,7 +206,11 @@ function Skills() {
                         className={` w-full rounded-full h-2 overflow-hidden bg-gray-200 `}
                     >
                         <div
-                            className={`h-full bg-gradient-to-r ${isDark?"from-blue-300 to to-blue-400":"from-purple-400 to-purple-600"} rounded-full`}
+                            className={`h-full bg-gradient-to-r ${
+                                isDark
+                                    ? "from-blue-300 to to-blue-400"
+                                    : "from-purple-400 to-purple-600"
+                            } rounded-full`}
                             style={{ width: `${item.level}%` }}
                         />
                     </div>
@@ -160,7 +220,7 @@ function Skills() {
     }
     return (
         <section
-            className={`pb-20 w-full transform transition-colors duration-300 delay-125 ${
+            className={`pb-20 w-full min-h-screen transform transition-colors duration-300 delay-125 ${
                 isDark ? "bg-gray-900 text-gray-200" : "bg-white  text-gray-700"
             }`}
         >
@@ -171,13 +231,13 @@ function Skills() {
                         isDark ? "text-white" : "text-gray-700"
                     } `}
                 >
-                    My{" "}
+                    My
                     <span
                         className={`${
                             isDark ? "text-blue-400" : "text-purple-600"
                         }`}
                     >
-                        Skills
+                        {" "}Skills
                     </span>
                 </h2>
                 <p>
@@ -196,7 +256,7 @@ function Skills() {
                 >
                     <span
                         onClick={() => setSkills("tech")}
-                        className={`p-5 rounded-full font-semibold cursor-pointer ${
+                        className={`px-5 py-3 md:p-5 rounded-full font-semibold cursor-pointer ${
                             skills === "tech"
                                 ? `shadow-2xl ${
                                       isDark
@@ -214,7 +274,7 @@ function Skills() {
                     </span>
                     <span
                         onClick={() => setSkills("soft")}
-                        className={`p-5 rounded-full font-semibold cursor-pointer ${
+                        className={`px-5 py-3 md:p-5 rounded-full font-semibold cursor-pointer ${
                             skills === "soft"
                                 ? `shadow-2xl ${
                                       isDark
@@ -231,16 +291,45 @@ function Skills() {
                         Soft Skills
                     </span>
                 </section>
-                <section className={`grid grid-cols-2 md:grid-cols-3 gap-3 m-5`}>
-                    {skills === "tech" && techSkills.map((item, index) => (
-                        <Tech key={index} item={item} index={index} />
-                    ))}
-                    {skills === "soft" && softSkils.map((item, index) => (
-                        <Soft key={index} item={item} index={index} />
-                    ))}
+                {/* ADD STAGGER ANIMATION TO CHILDREN */}
+                <section
+                    className={` ${
+                        skills === "tech"
+                            ? "grid-cols-2 md:grid-cols-3"
+                            : "grid-cols-1 md:grid-cols-2"
+                    } grid gap-3 m-5`}
+                >
+                    {skills === "tech" &&
+                        techSkills.map((item, index) => (
+                            <Tech key={index} item={item} index={index} />
+                        ))}
+                    {skills === "soft" &&
+                        softSkils.map((item, index) => (
+                            <Soft key={index} item={item} index={index} />
+                        ))}
                 </section>
             </main>
-            <footer></footer>
+            <footer className="text-center mt-15 space-y-7">
+                <p>Ready to work on your next project?</p>
+                <div className=" space-x-3">
+                    <button
+                        className={`px-5 py-3 md:py-5 md:px-10 rounded-full ${
+                            isDark
+                                ? "bg-gradient-to-r from-blue-300 to-blue-400"
+                                : " bg-gradient-to-r from-purple-400 to-purple-600"
+                        }`}
+                    >
+                        Book me
+                    </button>
+                    <button
+                        className={`px-5 py-3 md:py-5 md:px-10 rounded-full border ${
+                            isDark ? " text-blue-400" : "  text-purple-600"
+                        }`}
+                    >
+                        View Resume
+                    </button>
+                </div>
+            </footer>
         </section>
     )
 }

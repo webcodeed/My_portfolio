@@ -6,6 +6,10 @@ import {
     IdentificationIcon,
 } from "@heroicons/react/24/outline"
 import { useState } from "react"
+import { FiSearch } from "react-icons/fi"
+import { FaBookOpen, FaHandsHelping } from "react-icons/fa"
+import { BiDetail } from "react-icons/bi"
+import { TbWriting } from "react-icons/tb"
 
 function About() {
     const [approach, setApproach] = useState(false)
@@ -14,27 +18,27 @@ function About() {
     const { isDark } = useTheme()
     const values = [
         {
-            icon: <IdentificationIcon className="w-5 h-5" />,
+            icon: <FiSearch className="w-5 h-5" />,
             head: "Clarity first:",
             body: "Simple beats clever. In code, design, and how I work.",
         },
         {
-            icon: <IdentificationIcon className="w-5 h-5" />,
+            icon: <FaBookOpen className="w-5 h-5" />,
             head: "Always learning:",
             body: "I stay curious and build my skills one project at a time.",
         },
         {
-            icon: <IdentificationIcon className="w-5 h-5" />,
+            icon: <BiDetail className="w-5 h-5" />,
             head: "Details matter:",
             body: "Small things like spacing and speed shape the full experience.",
         },
         {
-            icon: <IdentificationIcon className="w-5 h-5" />,
+            icon: <FaHandsHelping className="w-5 h-5" />,
             head: "People over pixels:",
             body: "I build for real users. Clean, accessible, and built with purpose.",
         },
         {
-            icon: <IdentificationIcon className="w-5 h-5" />,
+            icon: <TbWriting className="w-5 h-5" />,
             head: "Care in every line:",
             body: "I value clear thinking, honest feedback, and doing things the right way.",
         },
@@ -204,8 +208,8 @@ function About() {
                                 <span
                                     className={`flex items-center gap-3 mb-3 ${
                                         isDark
-                                            ? "text-gray-400"
-                                            : "text-blue-600"
+                                            ? "text-blue-400"
+                                            : "text-purple-600"
                                     }`}
                                 >
                                     {item.icon}

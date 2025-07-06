@@ -65,6 +65,7 @@ function NavBar() {
                 )}
             </button>
             {/* Navigation  */}
+            {/* DO NOT FORGET USEREF AND ALSO THE EFFECT THAT HIGHLIGHTS THE CURRENT PAGE  */}
             <ul
                 className={`md:flex md:flex-wrap md:justify-center  md:items-center md:grow-1 md:gap-5 absolute opacity-0 md:opacity-100 md:z-auto md:static md:p-0 md:h-auto md:translate-x-0 w-full md:w-auto p-2 backdrop-blur-md bg-inherit h-[40vh] transform transition-all ease-in-out duration-500
                 ${
