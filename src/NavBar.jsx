@@ -39,7 +39,8 @@ function NavBar() {
             <h2 className=" grow-3 font-semibold text-2xl md:text-3xl lg:text-4xl text-transparent bg-gradient-to-r from-purple-600 to-blue-300 bg-clip-text ">
                 Ayomide Otegbade
             </h2>
-            {/* ToggleButton */}
+
+            {/* ToggleThemeButton */}
             <button
                 onClick={toggleTheme}
                 className=" space-x-5 text-2xl px-3 py-2 cursor-pointer hover:scale-120 active:scale-90 transform transition-all ease-in-out duration-200 "
@@ -85,7 +86,7 @@ function NavBar() {
                                         ? "text-gray-200 md:after:bg-gray-200 hover:bg-gray-900"
                                         : "text-gray-700 hover:bg-gray-300 md:after:bg-gray-700 "
                                 }`}
-                        onClick={() => setIsMenu(!isMenu)}
+                        onClick={() => setIsMenu(false)}
                     >
                         {item}
                     </li>

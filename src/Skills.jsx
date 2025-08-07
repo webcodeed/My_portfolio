@@ -313,7 +313,7 @@ function Skills() {
                 <p>Ready to work on your next project?</p>
                 <div className=" space-x-3">
                     <button
-                        className={`px-5 py-3 md:py-5 md:px-10 rounded-full ${
+                        className={`px-5 py-3 md:py-5 md:px-10 rounded-full hover:scale-95 transform transition ease-in-out cursor-pointer ${
                             isDark
                                 ? "bg-gradient-to-r from-blue-300 to-blue-400"
                                 : " bg-gradient-to-r from-purple-400 to-purple-600"
@@ -322,7 +322,7 @@ function Skills() {
                         Book me
                     </button>
                     <button
-                        className={`px-5 py-3 md:py-5 md:px-10 rounded-full border ${
+                        className={`px-5 py-3 md:py-5 md:px-10 rounded-full hover:scale-95 transform transition ease-in-out cursor-pointer border ${
                             isDark ? " text-blue-400" : "  text-purple-600"
                         }`}
                     >
